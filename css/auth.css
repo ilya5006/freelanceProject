@@ -1,0 +1,76 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lato', sans-serif;
+}
+
+body
+{
+    display: flex;
+    justify-content: center;
+    background-image: url("https://winbuzzer.com/wp-content/uploads/2017/07/hp-envy-x2-creators-update-compatibility-issue-source-flickr.jpg");
+    background-size: cover;
+}
+
+form
+{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    
+    top: 35%;
+    width: 500px;
+}
+
+input
+{
+    border: 0px;
+    border-radius: 40px;
+
+    padding: 14px;
+
+    opacity: 0.6;
+}
+
+#password
+{
+    margin-top: 20px;
+}
+
+input[type="submit"]
+{
+    margin-top: 30px;
+    cursor: pointer;
+    background-color: #5e5a5a;
+    color: white;
+    font-size: 20px;
+}
+
+form p
+{
+    margin-top: 5px;
+    text-align: center;
+    color: #d8d3d3;
+}
+
+form p a
+{
+    text-decoration: none;
+    color: #d8d3d3;
+    font-weight: bold;
+}
+
+footer
+{
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+
+    color: #d8d3d3
+}
+
+footer p
+{
+    text-align: center;
+}
