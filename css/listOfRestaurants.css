@@ -62,13 +62,8 @@ table tr td
     text-align: center;
     vertical-align: middle;
 
-    border-right: 1px solid black;
-    padding: 10px 0px;
-}
-
-table tr
-{
     border: 1px solid black;
+    height: 45px;
 }
 
 #titles
