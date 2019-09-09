@@ -93,3 +93,17 @@ table tr
 {
     background-color: #b0b0b0;
 }
+
+footer
+{
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+
+    color: #d8d3d3
+}
+
+footer p
+{
+    text-align: center;
+}
