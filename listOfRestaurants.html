@@ -17,7 +17,7 @@
     <div id="main">
         <table id="titles">
             <tr>
-                <td class="border" id="grey">a</td>
+                <td class="border" id="grey"></td>
                 <td>Название</td>
                 <td>Город</td>
                 <td>Адрес</td>
@@ -26,10 +26,54 @@
                 <td><button id="create">Создать +</button></td>
             </tr>
         </table>
+
+        <h2>Воронеж</h2>
+
+        <table class="city">
+            <tr>
+                <td class="border green"></td>
+                <td>Чайхана №1</td>
+                <td>Воронеж</td>
+                <td>Карла Маркса 67/2</td>
+                <td>somemail@mail.ru</td>
+                <td>somemail@mail.ru</td>
+                <td><button id="create">Создать +</button></td>
+            </tr>
+        </table>
+
+        <table class="city">
+            <tr>
+                <td class="border green"></td>
+                <td>Чайхана №1</td>
+                <td>Воронеж</td>
+                <td>Карла Маркса 67/2</td>
+                <td>somemail@mail.ru</td>
+                <td>somemail@mail.ru</td>
+                <td><button id="create">Создать +</button></td>
+            </tr>
+        </table>
     </div>
 
     <footer>
         <p>Copyright что-то там. Служба поддержки: 8-800-555-35-35. email: support@rofl.com</p> 
     </footer>
+
+
+    <script>
+        let citys = document.querySelectorAll('.city tr td');
+
+        for (let i = 0; i < citys.length; i++)
+        {
+            citys[i].addEventListener('mouseover', (event) =>
+            {
+                event.target.offsetParent.style.borderBottom = '3px solid #66CC33';
+            });
+
+            citys[i].addEventListener('mouseleave', (event) =>
+            {
+                event.target.offsetParent.style.borderBottom = '';
+            });
+        }
+    </script>
 </body>
 </html>

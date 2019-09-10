@@ -15,6 +15,12 @@ a
     text-decoration: none;
 }
 
+h2
+{
+    color: #f6f6f6;
+    padding: 20px;
+}
+
 header
 {
     display: flex;
@@ -91,6 +97,17 @@ table tr td
     border-radius: 4px;
 }
 
+.city
+{
+    margin-top: 10px;
+}
+
+.city tr 
+{
+    background-color: #696565;
+    color: #f6f6f6;
+}
+
 .border
 {
     width: 20px;
@@ -99,6 +116,11 @@ table tr td
 #grey
 {
     background-color: #b0b0b0;
+}
+
+.green
+{
+    background-color: #66CC33;
 }
 
 footer
