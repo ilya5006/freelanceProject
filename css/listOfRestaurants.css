@@ -102,6 +102,11 @@ table tr td
     margin-top: 10px;
 }
 
+.city:hover
+{
+    cursor: pointer;
+}
+
 .city tr 
 {
     background-color: #696565;
