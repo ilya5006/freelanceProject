@@ -18,12 +18,12 @@
         <table id="titles">
             <tr>
                 <td class="border" id="grey"></td>
-                <td>Название</td>
-                <td>Город</td>
-                <td>Адрес</td>
-                <td>Представитель</td>
-                <td>Логин</td>
-                <td><button id="create">Создать +</button></td>
+                <td class="restaurant_row">Название</td>
+                <td class="city_row">Город</td>
+                <td class="restaurant_row">Адрес</td>
+                <td class="restaurant_row">Представитель</td>
+                <td class="login_row">Логин</td>
+                <td class="button"><button id="create">Создать +</button></td>
             </tr>
         </table>
 
@@ -37,7 +37,7 @@
                 <td>Карла Маркса 67/2</td>
                 <td>somemail@mail.ru</td>
                 <td>somemail@mail.ru</td>
-                <td><button id="create">Создать +</button></td>
+                <td></td>
             </tr>
         </table>
 
@@ -49,7 +49,7 @@
                 <td>Карла Маркса 67/2</td>
                 <td>somemail@mail.ru</td>
                 <td>somemail@mail.ru</td>
-                <td><button id="create">Создать +</button></td>
+                <td></td>
             </tr>
         </table>
     </div>
@@ -61,6 +61,7 @@
 
     <script>
         let citys = document.querySelectorAll('.city tr td');
+        let buttons = document.querySelectorAll('.city tr td button');
 
         for (let i = 0; i < citys.length; i++)
         {
@@ -71,7 +72,7 @@
 
             citys[i].addEventListener('mouseleave', (event) =>
             {
-                event.target.offsetParent.style.borderBottom = '';
+                event.target.offsetParent.style.borderBottom = '0px';
             });
         }
     </script>
