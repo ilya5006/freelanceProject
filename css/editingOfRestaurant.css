@@ -1,0 +1,107 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: #454545;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+header
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    background-color: #696565;
+
+    font-size: 20px;
+
+    padding: 0px 120px;
+}
+
+#logo
+{
+    padding: 10px;
+    
+    color: #aeabab;
+}
+
+#profile
+{
+    text-align: center;
+    color: #aeabab;
+
+    background-color: #423e3e;
+
+    padding: 3px 10px 0px;
+}
+
+#main
+{
+    padding: 0px 120px;
+}
+
+footer
+{
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+
+    color: #d8d3d3
+}
+
+footer p
+{
+    text-align: center;
+}
+
+form
+{
+    background-color: #3a3a3a;
+    display: flex;
+    flex-direction: column;
+
+    padding: 10px;
+    min-width: 720px;
+}
+
+#editing_and_logo
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: grey;
+}
+
+#editing_and_logo h2, #editing_and_logo p
+{
+    color: #e3e3e3;
+}
+
+input[type="input"]
+{   
+    padding: 3px;
+    padding-left: 8px;
+}
+
+input
+{
+    border-radius: 10px;
+    border: 0px;
+    
+}
+
+input[name="name_of_restaurant"], input[name="address_of_restaurant"]
+{
+    width: 100%;
+}

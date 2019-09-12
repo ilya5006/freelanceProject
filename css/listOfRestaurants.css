@@ -3,6 +3,7 @@
     margin: 0px;
     padding: 0px;
     font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
 }
 
 body
@@ -31,7 +32,7 @@ header
 
     font-size: 20px;
 
-    padding: 0px 90px;
+    padding: 0px 120px;
 }
 
 #logo
@@ -53,79 +54,7 @@ header
 
 #main
 {
-    padding: 0px 80px;
-}
-
-table
-{
-    width: 100%;
-
-    border-collapse: collapse;
-}
-
-table tr td
-{
-    text-align: center;
-    vertical-align: middle;
-
-    border: 1px solid black;
-    height: 45px;
-}
-
-#titles
-{
-    margin-top: 10px;
-    color: #b0b0b0;
-    background-color: #3a3a3a;
-}
-
-#titles tr td button
-{
-    float: right;
-
-    background-color: #b0b0b0;
-
-    height: 100%;
-    width: 150px;
-    
-    font-size: 20px;
-    color: #f6f6f6;
-
-    cursor: pointer;
-
-    border: 0px;
-    border-radius: 4px;
-}
-
-.city
-{
-    margin-top: 10px;
-}
-
-.city:hover
-{
-    cursor: pointer;
-}
-
-.city tr 
-{
-    background-color: #696565;
-    color: #f6f6f6;
-}
-
-.border
-{
-    width: 20px;
-}
-
-#grey
-{
-    background-color: #b0b0b0;
-}
-
-.green
-{
-    background-color: #66CC33;
+    padding: 0px 100px;
 }
 
 footer
@@ -140,4 +69,88 @@ footer
 footer p
 {
     text-align: center;
+}
+
+#titles, .city
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    height: 40px;
+    min-width: 862px;
+}
+
+.city:hover
+{
+    border-bottom: 1px solid #66CC33;
+}
+
+.border
+{
+    width: 2%;
+}
+
+.restaurant_row, .city_row, .address_row, .agent_row, .login_row
+{
+    width: 15%;
+    border-right: 1px solid black;
+}
+
+.button_row
+{
+    width: 23%;
+}
+
+.button_row button
+{
+    background-color: #b0b0b0;
+
+    height: 100%;
+    width: 100px;
+    font-size: 20px;
+
+    color: #f6f6f6;
+
+    cursor: pointer;
+
+    border: 0px;
+    border-radius: 8px;
+}
+
+#titles div, .city div
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#titles
+{
+    margin-top: 10px;
+    color: #b0b0b0;
+    background-color: #3a3a3a;
+}
+
+.city
+{
+    margin-top: 10px;
+    
+    background-color: #696565;
+    color: #f6f6f6;
+}
+
+.city:hover
+{
+    cursor: pointer;
+}
+
+#grey
+{
+    background-color: #b0b0b0;
+}
+
+.green
+{
+    background-color: #66CC33;
 }

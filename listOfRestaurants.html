@@ -15,66 +15,53 @@
     </header>
 
     <div id="main">
-        <table id="titles">
-            <tr>
-                <td class="border" id="grey"></td>
-                <td class="restaurant_row">Название</td>
-                <td class="city_row">Город</td>
-                <td class="restaurant_row">Адрес</td>
-                <td class="restaurant_row">Представитель</td>
-                <td class="login_row">Логин</td>
-                <td class="button"><button id="create">Создать +</button></td>
-            </tr>
-        </table>
+        <div id="titles">
+            <div class="border" id="grey"></div>
+            <div class="restaurant_row">Название</div>
+            <div class="city_row">Город</div>
+            <div class="address_row">Адрес</div>
+            <div class="agent_row">Представитель</div>
+            <div class="login_row">Логин</div>
+            <div class="button_row"><button>Создать +</button></div>
+        </div>
 
         <h2>Воронеж</h2>
 
-        <table class="city">
-            <tr>
-                <td class="border green"></td>
-                <td>Чайхана №1</td>
-                <td>Воронеж</td>
-                <td>Карла Маркса 67/2</td>
-                <td>somemail@mail.ru</td>
-                <td>somemail@mail.ru</td>
-                <td></td>
-            </tr>
-        </table>
+        <div class="city">
+            <div class="border green"></div>
+            <div class="restaurant_row">Чайхана №1</div>
+            <div class="city_row">Воронеж</div>
+            <div class="address_row">Карла Маркса 67/2</div>
+            <div class="agent_row">somemail@mail.ru</div>
+            <div class="login_row">somemail@mail.ru</div>
+            <div class="button_row"></div>
+        </div>
 
-        <table class="city">
-            <tr>
-                <td class="border green"></td>
-                <td>Чайхана №1</td>
-                <td>Воронеж</td>
-                <td>Карла Маркса 67/2</td>
-                <td>somemail@mail.ru</td>
-                <td>somemail@mail.ru</td>
-                <td></td>
-            </tr>
-        </table>
+        <div class="city">
+            <div class="border green"></div>
+            <div class="restaurant_row">Чайхана №1</div>
+            <div class="city_row">Воронеж</div>
+            <div class="address_row">Карла Маркса 67/2</div>
+            <div class="agent_row">somemail@mail.ru</div>
+            <div class="login_row">somemail@mail.ru</div>
+            <div class="button_row">Редактировать</div>
+        </div>
+
+        <h2>Омск</h2>
+
+        <div class="city">
+            <div class="border green"></div>
+            <div class="restaurant_row">Чайхана №228</div>
+            <div class="city_row">Омск</div>
+            <div class="address_row">Карла Маркса 67/2</div>
+            <div class="agent_row">somemail@mail.ru</div>
+            <div class="login_row">somemail@mail.ru</div>
+            <div class="button_row"></div>
+        </div>
     </div>
 
     <footer>
         <p>Copyright что-то там. Служба поддержки: 8-800-555-35-35. email: support@rofl.com</p> 
     </footer>
-
-
-    <script>
-        let citys = document.querySelectorAll('.city tr td');
-        let buttons = document.querySelectorAll('.city tr td button');
-
-        for (let i = 0; i < citys.length; i++)
-        {
-            citys[i].addEventListener('mouseover', (event) =>
-            {
-                event.target.offsetParent.style.borderBottom = '3px solid #66CC33';
-            });
-
-            citys[i].addEventListener('mouseleave', (event) =>
-            {
-                event.target.offsetParent.style.borderBottom = '0px';
-            });
-        }
-    </script>
 </body>
 </html>

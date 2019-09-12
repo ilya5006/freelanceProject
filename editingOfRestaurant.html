@@ -20,11 +20,11 @@
                 <div id="editing">
                     <h2>Редактирование ресторана</h2>
                     <p>Название:</p>
-                    <input type="input" placeholder="Три метлы...">
+                    <input type="input" placeholder="Три метлы..." name="name_of_restaurant">
                     <p>Адрес:</p>
-                    <input type="input" placeholder="ул. Строителей">
+                    <input type="input" placeholder="ул. Строителей" name="address_of_restaurant">
                     <p>Город:</p>
-                    <select>
+                    <select name="city">
                         <option>Лосино-Петровский</option>
                         <option>Залупа</option>
                         <option>Дайте</option>
@@ -32,12 +32,12 @@
                         <option>В Москве</option>
                     </select>
                     <p>Средний чек:</p>
-                    <input type="input" placeholder="0">
+                    <input type="input" placeholder="0" name="average_check">
                     <p>Координаты:</p>
-                    <input type="input" placeholder="Широта...">
-                    <input type="input" placeholder="Долгота...">
+                    <input type="input" placeholder="Широта..." name="latitude"><br>
+                    <input type="input" placeholder="Долгота..." name="longitude"><br>
 
-                    <input type="checkbox" name="is_video_allow" value="is_video_allow"> Может загружать видео для блюд
+                    <input type="checkbox" name="is_video_allow" value="is_video_allow"> Может загружать видео для блюд <br>
                     <input type="checkbox" name="is_active" value="is_video_allow"> Активен
                 </div>
 
@@ -49,7 +49,7 @@
                     <input type="file">
                 </div>
             </div>
-            <input type="send" value="Сохранить">
+            <input type="submit" value="Сохранить">
         </form>
     </div>
 
