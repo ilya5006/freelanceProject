@@ -88,20 +88,29 @@ form
     color: #e3e3e3;
 }
 
+#editing p
+{
+    margin-top: 10px;
+}
+
 input[type="input"]
 {   
     padding: 3px;
     padding-left: 8px;
 }
 
-input
+input, select
 {
     border-radius: 10px;
     border: 0px;
-    
 }
 
 input[name="name_of_restaurant"], input[name="address_of_restaurant"]
 {
     width: 100%;
+}
+
+input[name="longitude"]
+{
+    margin-top: 5px;
 }
