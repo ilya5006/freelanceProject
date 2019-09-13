@@ -71,7 +71,7 @@ form
     display: flex;
     flex-direction: column;
 
-    padding: 10px;
+    padding: 15px;
     min-width: 720px;
 }
 
@@ -93,16 +93,22 @@ form
     margin-top: 10px;
 }
 
-input[type="input"]
+input[type="input"], select
 {   
-    padding: 3px;
+    padding: 5px;
     padding-left: 8px;
+    width: 200px;
 }
 
 input, select
 {
     border-radius: 10px;
     border: 0px;
+
+    margin-top: 5px;
+
+    background-color: #242424;
+    color: #747474;
 }
 
 input[name="name_of_restaurant"], input[name="address_of_restaurant"]
@@ -110,7 +116,36 @@ input[name="name_of_restaurant"], input[name="address_of_restaurant"]
     width: 100%;
 }
 
-input[name="longitude"]
+#restaurant_logo input
 {
-    margin-top: 5px;
+    margin-top: 10px;
+}
+
+#restaurant_logo_border
+{
+    background-color: #242424;
+    height: 150px;
+    border-radius: 10px;
+    margin-top: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="submit"]
+{
+    border-radius: 15px;
+
+    background-color: #7c7c7c;
+    color: #f6f6f6;
+
+    padding: 7px 20px;
+    margin: 0px auto;
+    
+    cursor: pointer;
+
+    font-weight: bold;
+
+    box-shadow: 2px 3px 0px rgba(0, 0, 0, 0.5);
 }
