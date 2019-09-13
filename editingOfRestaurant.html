@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/editingOfRestaurant.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap"> 
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <a id="logo" href="">Забей</a>
+        <a id="profile" href="">&or;</a>
+    </header>
+
+    <div id="main">
+        <form enctype="multipart/form-data" method="POST">
+            <div id="editing_and_logo">
+                <div id="editing">
+                    <h2>Редактирование ресторана</h2>
+                    <p>Название:</p>
+                    <input type="input" placeholder="Три метлы..." name="name_of_restaurant">
+                    <p>Адрес:</p>
+                    <input type="input" placeholder="ул. Строителей" name="address_of_restaurant">
+                    <p>Город:</p>
+                    <select name="city">
+                        <option>Лосино-Петровский</option>
+                        <option>Залупа</option>
+                        <option>Дайте</option>
+                        <option>Квартиру</option>
+                        <option>В Москве</option>
+                    </select>
+                    <p>Средний чек:</p>
+                    <input type="input" placeholder="0" name="average_check">
+                    <p>Координаты:</p>
+                    <input type="input" placeholder="Широта..." name="latitude"><br>
+                    <input type="input" placeholder="Долгота..." name="longitude"><br>
+
+                    <input type="checkbox" name="is_video_allow" value="is_video_allow"> Может загружать видео для блюд <br>
+                    <input type="checkbox" name="is_active" value="is_video_allow"> Активен
+                </div>
+
+                <div id="restaurant_logo">
+                    <h2>Обновить логотип ресторана: </h2>
+                    <div id="restaurant_logo_border">
+                        <img src="" alt="restautant logo">
+                    </div>
+                    <input type="file">
+                </div>
+            </div>
+            <input type="submit" value="Сохранить">
+        </form>
+    </div>
+
+    <footer>
+        <p>Copyright что-то там. Служба поддержки: 8-800-555-35-35. email: support@rofl.com</p> 
+    </footer>
+</body>
+</html>
