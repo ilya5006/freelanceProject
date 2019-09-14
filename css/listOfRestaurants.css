@@ -28,7 +28,7 @@ header
     flex-direction: row;
     justify-content: space-between;
 
-    background-color: #696565;
+    background-color: #565455;
 
     font-size: 20px;
 
@@ -45,7 +45,7 @@ header
 #profile
 {
     text-align: center;
-    color: #aeabab;
+    color: #d6d6d6;
 
     background-color: #423e3e;
 
