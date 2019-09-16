@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/listOfDishes.css">
+    <link rel="stylesheet" href="./css/category.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap"> 
+    <title>Список блюд</title>
+</head>
+<body>
+    <header>
+        <div id="restaurant_logo"></div>
+        <div id="restaurant_menu">
+            <div id="name_address">
+                <p id="restaurant_name">Чайхана номер один</p>
+                <p id="restaurant_address">Воронеж, Карла Маркса, 67/1</p>
+            </div>
+            <a id="arrow" href="">&or;</a>
+        </div>
+        
+        <ul>
+            <li><a href="">Бронь</a></li>
+            <li><a href="">Хостес</a></li>
+            <li><a href="">Меню</a></li>
+            <li><a href="">Схема зала</a></li>
+            <li><a href="">Интеграция</a></li>
+        </ul>
+        
+        <a id="profile" href="">&or;</a>
+    </header>
+    
+    <div id="directory">
+        <p><a href="">Основное меню</a></p>
+        <p>&gt;</p>
+    </div>
+    <div id="main_content">
+        <ul id="left_navigation">
+            <li id="choosed"><a href="">Меню</a></li>
+            <li><a href="">Стоп лист</a></li>
+            <li><a href="">Ахрив</a></li>            
+        </ul>
+
+        <form id="add_category" action="" method="POST" enctype="multipart/form-data">
+            <div><p>Категория: </p>
+            <input type="input" placeholder="Придумайте название категории..."></div>
+            <div id="image">
+                <img src="./img/load_image.png" alt="loaded_image">
+                <div id="choose_image">
+                    <p>Выберите изображение: </p>
+                    <input type="file" name="image">
+                    <p>Разрешение изображения:  300x300. На белом фоне в формате png или jpeg</p>
+                </div>
+            </div>
+
+            <input type="submit" value="Добавить">
+        </form>
+    </div>
+    
+    <footer>
+        <p>Copyright что-то там. Служба поддержки: 8-800-555-35-35. email: support@rofl.com</p> 
+    </footer>
+</body>
+</html>
