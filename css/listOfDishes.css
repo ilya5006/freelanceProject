@@ -112,7 +112,22 @@ header ul li a:hover
     justify-content: center;
     align-items: center;
 
+    background-color: #4b4b4b;
+    
+    padding: 20px;
+
     height: 100%;
+
+    cursor: pointer;
+}
+
+#profile img
+{
+    margin-top: 4px;
+    margin-right: 5px;
+    
+    width: 40px;
+    height: 40px;
 }
 
 #directory
@@ -136,7 +151,7 @@ header ul li a:hover
 #main_content
 {
     display: flex;
-    flex-direction: row;
+    flex-direction: row; 
 }
 
 #left_navigation
@@ -165,7 +180,7 @@ header ul li a:hover
 {
     background-color: #3c3c3c;
 }
-
+ 
 #dishes
 {
     background-color: #3c3c3c;

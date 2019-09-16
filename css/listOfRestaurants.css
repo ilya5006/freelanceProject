@@ -44,12 +44,28 @@ header
 
 #profile
 {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #4b4b4b;
+    
+    padding: 20px;
+
+    height: 100%;
+
     color: #d6d6d6;
 
-    background-color: #423e3e;
+    cursor: pointer;
+}
 
-    padding: 3px 10px 0px;
+#profile img
+{
+    margin-top: 4px;
+    margin-right: 5px;
+    
+    width: 40px;
+    height: 40px;
 }
 
 #main
