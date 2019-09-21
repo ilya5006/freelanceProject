@@ -42,17 +42,17 @@
         </ul>
 
         <form id="add_category" action="" method="POST" enctype="multipart/form-data">
-            <div>
+            <div id="category_div">
                 <p>Категория: </p>
-                <input type="input" placeholder="Придумайте название категории...">
+                <input name="category_name" type="input" placeholder="Придумайте название категории...">
             </div>
-            
+
             <div id="image">
                 <img src="./img/load_image.png" alt="loaded_image">
                 <div id="choose_image">
                     <p>Выберите изображение: </p>
-                    <input type="file" name="image">
-                    <p>Разрешение изображения:  300x300. На белом фоне в формате png или jpeg</p>
+                    <input name="category_image" type="file" name="image"><br>
+                    <span>Разрешение изображения:  300x300. На белом фоне в формате png или jpeg</span>
                 </div>
             </div>
 
